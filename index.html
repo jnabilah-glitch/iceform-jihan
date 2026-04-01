@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Ice Cream Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🍦 Ice Cream Order Form</h1>
+    <p>Isi data kamu untuk pesan es krim favorit!</p>
+
+    <form>
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Masukkan nama kamu" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email" required>
+
+        <label>Pilih Rasa Es Krim</label>
+        <select required>
+            <option value="">-- Pilih Rasa --</option>
+            <option>Coklat</option>
+            <option>Vanilla</option>
+            <option>Strawberry</option>
+            <option>Matcha</option>
+        </select>
+
+        <label>Jumlah Pesanan</label>
+        <input type="number" min="1" max="10" required>
+
+        <label>Topping Favorit</label>
+        <div class="checkbox">
+            <input type="checkbox"> Oreo
+            <input type="checkbox"> Keju
+            <input type="checkbox"> Choco Chips
+        </div>
+
+        <label>Catatan Tambahan</label>
+        <textarea placeholder="Tulis request kamu..."></textarea>
+
+        <button type="submit">Pesan Sekarang 🍨</button>
+    </form>
+</div>
+
+</body>
+</html>
